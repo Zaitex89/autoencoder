@@ -73,7 +73,9 @@ for epoch in range(EPOCHS):
 
     avg = running_loss / len(train_loader)
     print(f"Epoch {epoch + 1}/{EPOCHS} loss: {avg:.4f}")
-
+    torch.save(model.state_dict(), "autoencoder.pth")
+    
+print("model saved as autoencoder.pth")
 # 4. See how well it reconstructs digits it never trained on
 
 model.eval()
