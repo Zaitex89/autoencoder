@@ -13,7 +13,7 @@ Projektet består av tre steg som körs i tur och ordning:
 
 ## Krav
 
-- Python 3.9 eller senare
+- Python 3.13.5 eller senare
 - Följande paket:
 
 ```
